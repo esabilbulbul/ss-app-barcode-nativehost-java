@@ -36,7 +36,7 @@ public class main {
     //Convert length from Bytes to int
     public static int getInt(byte[] bytes) 
     {
-        return (bytes[3] << 24) & 0xff000000|
+        return  (bytes[3] << 24) & 0xff000000|
                 (bytes[2] << 16)& 0x00ff0000|
                 (bytes[1] << 8) & 0x0000ff00|
                 (bytes[0] << 0) & 0x000000ff;
